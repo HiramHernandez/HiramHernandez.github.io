@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>JSON Place Holder</title>
+</head>
+<body>
+    
+    
+    <div id="container" class="container content">
+        <span class="loader-mixin"></span>
+        <div class='columns is-mobile is-centered'>
+           
+            <div class='column is-8'>
+                <div>
+                    <h1 class='title'>User Information</h1>
+                    <hr>
+                </div>
+                <table class="table is-fullwidth is-striped is-hoverable is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th><abbr title="Id">Id</abbr></th>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                          </tr>
+                    </thead>
+                    <tbody id="data">
+                        <div class="columns">
+                            <div class="column">
+                              First column
+                            </div>
+                            <div class="column">
+                              Second column
+                            </div>
+                            <div class="column">
+                              Third column
+                            </div>
+                            <div class="column">
+                              Fourth column
+                            </div>
+                          </div>
+                    </tbody>  
+                </table>
+                <hr>
+                <form id="form" method="post" onsubmit="postData(event)" action="#">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                          <input id="name" class="input" type="text" placeholder="Text input">
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Surname</label>
+                        <div class="control">
+                          <input id="surname" class="input" type="text" placeholder="Text input">
+                        </div>
+                      </div>
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-link">Save</button>
+                        </div>
+                      </div>
+                </form>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
